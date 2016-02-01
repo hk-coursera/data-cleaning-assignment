@@ -15,7 +15,7 @@
     * Uses get_trg_features and get_dir_data
 * `summarize_processed_data(df)`
     * Returns data frame, where each row contains average of each variable for each activity and each subject.
-* `run_analysis <- function(datasetDir="UCI HAR Dataset", summarizedFilename="tidy_summarized_datasetset.txt", processedFilename="full_processed_dataset.txt")`
+* `run_analysis <- function(datasetDir="UCI HAR Dataset", summarizedFilename="tidy_summarized_dataset.txt", processedFilename="full_processed_dataset.txt")`
     * Performs data cleaning using functions mentioned above and writes results in two files.
     * Returns summarized_data.
 
