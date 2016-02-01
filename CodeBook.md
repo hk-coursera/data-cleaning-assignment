@@ -55,8 +55,9 @@ full_processed_dataset.txt - filename of full data set created by run_analysis.R
 
 ###Notes: 
 
-* Features are normalized and bounded within [-1,1].
-
+* 'SubjectId' is number of one of 30 subjects that performed activities ([1,30]).
+* 'Activity' is one of six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) performed wearing a smartphone.
+* Other variables are normalized and bounded within [-1,1].
 
 ###The complete list of variables:
 
