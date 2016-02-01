@@ -12,6 +12,7 @@
         * adds 'SubjectId' and 'Activity' columns
         * includes only mean and standard deviation variables
         * renames columns with these variables to readable format
+    * Uses get_trg_features and get_dir_data
 * `summarize_processed_data(df)`
     * Returns data frame, where each row contains average of each variable for each activity and each subject.
 * `run_analysis(datasetDir="UCI HAR Dataset", processedFilename="processed_data.csv", summarizedFilename="summarized_data.csv")`
