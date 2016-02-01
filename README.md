@@ -1,5 +1,7 @@
 ###Script for data cleaning course assignment.
 
+Script includes call of the main function (`run_analysis()`), so it will start working immediately when load it with `source`.
+
 ####The script has following functions:
 
 * `get_trg_features(datasetDir)`
