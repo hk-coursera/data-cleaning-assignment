@@ -31,7 +31,7 @@ Description of original experiments: http://archive.ics.uci.edu/ml/datasets/Huma
 
 ###Performed data cleaning:
 
-Data from test/X_test.txt and train/X_train.txt with joined 'Activity' and 'SubjectId' columns was merged into single .csv file.
+Data from test/X_test.txt and train/X_train.txt with joined 'Activity' and 'SubjectId' columns was merged and summarized.
 
 Inertial Signals data from original data set was ignored and is not present in this one.
 
@@ -43,8 +43,9 @@ Inertial Signals data from original data set was ignored and is not present in t
 5. Variable names, that in original data set were provided in features.txt file, were used as column names (after removing all '()' symbols and replacing '-' with '.').
 6. Tidy data set was created, where each row contains average of each variable for each activity and each subject.
 
-processed_data.csv - filename of new data set created by run_analysis.R script.
-summarized_data.csv - filename of tidy data set created by run_analysis.R script.
+tidy_summarized_dataset.txt - filename of tidy data set created by run_analysis.R script.
+
+full_processed_dataset.txt - filename of full data set created by run_analysis.R script.
 
 ####The set of variables estimated from these signals present in this dataset: 
 

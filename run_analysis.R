@@ -40,14 +40,14 @@ summarize_processed_data <- function(df) {
   summarise_each(grouped, funs(mean), one_of(features))
 }
 
-run_analysis <- function(datasetDir="UCI HAR Dataset", processedFilename="processed_data.txt", summarizedFilename="summarized_data.txt") {
+run_analysis <- function(datasetDir="UCI HAR Dataset", summarizedFilename="tidy_summarized_datasetset.txt", processedFilename="full_processed_dataset.txt") {
   df <- get_processed_data(datasetDir)
   write.table(df, processedFilename, row.names=FALSE)
 
   summarized <- summarize_processed_data(df)
   write.table(summarized, summarizedFilename, row.names=FALSE)
 
-  df
+  summarized
 }
 
 run_analysis()
