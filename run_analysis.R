@@ -40,12 +40,12 @@ summarize_processed_data <- function(df) {
   summarise_each(grouped, funs(mean), one_of(features))
 }
 
-run_analysis <- function(datasetDir="UCI HAR Dataset", processedFilename="processed_data.csv", summarizedFilename="summarized_data.csv") {
+run_analysis <- function(datasetDir="UCI HAR Dataset", processedFilename="processed_data.txt", summarizedFilename="summarized_data.txt") {
   df <- get_processed_data(datasetDir)
-  write.csv(df, processedFilename, row.names=FALSE)
+  write.table(df, processedFilename, row.names=FALSE)
 
   summarized <- summarize_processed_data(df)
-  write.csv(summarized, summarizedFilename, row.names=FALSE)
+  write.table(summarized, summarizedFilename, row.names=FALSE)
 
   df
 }
